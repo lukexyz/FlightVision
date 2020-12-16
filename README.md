@@ -7,9 +7,20 @@ A `Unet` fastai solution to track `(x,z)` coordinates using segmentations layers
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
 
- 
-### Method 
-Start with a picture, find the coordinate of the dart point.
+# Existing Solution  
+
+#### VIP Price zone   
+
+* Booking lead time (4 months, mon-fri 9-5:30 only)   
+* Table service beer £4.80 (330ml peroni)  
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/location.JPG?raw=true"> 
+</p>  
+
+
+# Bootleg `fastai` Method 
+Take your own pictures, find the `x,y` coordinates of the dart point using a bastardized unet segmentation layer.
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/training_centroid_01.JPG?raw=true" width=50%>
