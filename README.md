@@ -1,7 +1,7 @@
 # FlightVision
 > Precision dart coordinates for serious bar sports.
 
-A `Unet` fastai solution to track `(x,z)` coordinates using segmentations layers, rather than classical regression. 
+A realtime solution to track `(x,z)` coordinates with `fastai` and `unets` using segmentations layers, rather than classical regression. 
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
@@ -11,7 +11,7 @@ A `Unet` fastai solution to track `(x,z)` coordinates using segmentations layers
 
 ### Booking Experience 
 
-* Lead time `4 months `
+* Call the location, booking lead time `4-5 months `
 * Table service, imported beer `£5.80` (330ml bottle)  
 
 <p align="center">
@@ -20,7 +20,7 @@ A `Unet` fastai solution to track `(x,z)` coordinates using segmentations layers
 
 
 # Bootleg Method via `fastai` v2
-> Why go out with your friends, when you can recreate it at home and have 50% of the fun by youself? 
+> Why go out with your friends, when you can recreate it at home and have 35% of the fun by youself? 
 
 Take your own pictures, find the `x,y` coordinates of the dart point using a bastardized unet segmentation layer.
 
