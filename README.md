@@ -1,5 +1,5 @@
 # 🎯 FlightVision
-> Precision dart coordinates, for serious bar sports.
+> Serious bar sports. With seriously accurate XY coordinates.
 
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
 
@@ -19,8 +19,10 @@ A realtime solution to track dart targets with `fastai` and `unets`, using segme
 </p>  
 
 
-# Bootleg Method via `fastai` v2
+# Bootleg Flightclub via `fastai` v2
 > Why go out with your friends, when you can recreate it at home and have 35% of the fun by youself? 
+
+> The Flightclub you're not allowed to talk about. 
 
 Take your own pictures, find the `x,y` coordinates of the dart point using a bastardized unet segmentation layer.
 
@@ -40,7 +42,7 @@ Take your own pictures, find the `x,y` coordinates of the dart point using a bas
 
 # Secret Training method
 
-The real dataset I built (300 pictures of me holding a dart) simply wasn't training. I new something must be wrong with my training pipelines - beacuse conceptually the CNN only needs to identify a couply of lines and the dart tip (!) so I was deeply suspicious and confused when the regression model wouldn't converge on anything near the correct coordinates.  
+The real dataset I built (300 pictures of me holding a dart) simply wasn't training. I knew something must be wrong with my training pipelines - beacuse conceptually the CNN only needs to identify a couply of lines and the dart tip (!) so I was deeply suspicious and confused when the regression model wouldn't converge on anything near the correct coordinates.  
 
 Using blender I simulated a simplified version of the problem. With this I could determin whether it was my training database that was wrong, or whether it was my ML/Dl approach that was wrong. 
 
