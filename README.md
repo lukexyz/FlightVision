@@ -1,7 +1,7 @@
-# FlightVision
-> Precision dart coordinates for serious bar sports.
+# 🎯 FlightVision
+> Precision dart coordinates, for serious bar sports.
 
-A realtime solution to track `(x,z)` coordinates with `fastai` and `unets` using segmentations layers, rather than classical regression. 
+A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
