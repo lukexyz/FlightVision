@@ -37,4 +37,3 @@ The real dataset I built (300 pictures of me awkwardly holding up a dart) simply
 
 Using blender, I aimed to completely simplify the vision problem by using a generated dataset.  
 
-![blender_synthetic](media/blender_synthetic.JPG)
