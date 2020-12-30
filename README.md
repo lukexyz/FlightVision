@@ -22,9 +22,9 @@ A realtime solution to track dart targets with `fastai` and `unets`, using segme
 
 
 # Bootleg Flightclub via `fastai` v2
-> Why go out with your friends, when you can recreate it at home and have 35% of the fun by youself? 
+Why go out with your friends, when you can recreate it by yourself at home and have 35% of the fun? 
 
-> The Flightclub you're not allowed to talk about. 
+> The Flightclub you are allowed to talk about. 
 
 Take your own pictures, find the `x,y` coordinates of the dart point using a bastardized unet segmentation layer.
 
