@@ -1,5 +1,5 @@
 # 🎯 FlightVision
-> Serious bar sports, with seriously accurate XY coordinates.
+> Serious bar sports. With seriously accurate XY coordinates.
 
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
 
