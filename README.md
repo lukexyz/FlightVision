@@ -3,6 +3,11 @@
 
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
 
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/location.JPG?raw=true"> 
+</p>  
+
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
@@ -14,9 +19,6 @@ A realtime solution to track dart targets with `fastai` and `unets`, using segme
 * Call the location, booking lead time `4-5 months `
 * Table service, imported beer `£5.80` (330ml bottle)  
 
-<p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/location.JPG?raw=true"> 
-</p>  
 
 
 # Bootleg Flightclub via `fastai` v2
