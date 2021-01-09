@@ -1,4 +1,4 @@
-# 🎯 FlightVision
+# 🎥🎯 FlightVision
 > Serious bar sports. With seriously accurate XY coordinates.  
 
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
@@ -10,7 +10,7 @@ A realtime solution to track dart targets with `fastai` and `unets`, using segme
  :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
 
 ## Background
-Flight Club is a modernised [social darts experience](https://flightclubdarts.com/london/our-story). It has become a popular franchise around London where it's main selling point is a gamified and automated scoring system. It has an effective and near invisible 3D vision system of cameras placed around the dart board, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
+Flight Club is a modernised pub sport, and [social experience](https://flightclubdarts.com/london/our-story). It has become a popular franchise around London where it's main selling point is a [gamified](https://en.wikipedia.org/wiki/Gamification), automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
 
 As of 2020 it has expanded into 3 locations in the UK and one in Chicago, USA. 
 
@@ -64,7 +64,7 @@ I knew something must be wrong either with the training process and architecture
 
 ### 2. Synthetic Dataset with `Blender`
 
-Using blender I simulated a simplified version of the problem. With this I could determine whether it was my training database that was wrong, or whether it was my ML/Dl approach that was wrong. 
+Using blender I simulated a simplified version of the problem. With this I could determine whether it was my training database that was wrong, or whether it was my ML/Dl approach that was wrong. I downloaded a 3d model from [grabcad](https://grabcad.com/library/simple-dart-1-0-1) and created a python script to automate rendering. 
 
   :bookmark_tabs: [blender_script.py](https://github.com/lukexyz/FlightVision/blob/master/blender/blender.py)
 
@@ -76,7 +76,17 @@ Using blender I simulated a simplified version of the problem. With this I could
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/blender_output.JPG?raw=true" width=50%>
 </p>
 
+Blender allows for scripting with python. It is quick to learning the scripting API, because when you create an event with the UI the equivalent python command appears in the console, which you can then paste directly into a script. Then with python you can add a loop around it – specify the inputs/outputs, and the whole process is automated. My blender script randomised the rotation, zoom, light position, and centroid `x, y` location. With these in place I generated 15,000 renders in about half an hour. 
 
+##### 📋 Results
+What I found was that even with this much simplified computer vision problem, the `cnn_learner` with regression head still couldn't converge (and overfit) the training dataset. With that I was convinced the problem was with the architecture, so I moved on to try something else. 
 
+### 3. Learning with `Unets` 
+
+`Unets` are a segmentation method, where the output of the model is a per-pixel classification mask of the original image. These are commonly used in examples of self-driving car solutions online. My intuition here was that instead of using a multi-classification class of scenery objects (like `tree`, `road`, `traffic_light` etc), the target segmentation mask could simply be `0` or `1`, where `0` is a pixel where the centroid isn't, and `1` is a pixel where the centroid is. 
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/training_segmentation.JPG?raw=true" width=70%>
+</p>
 
 
