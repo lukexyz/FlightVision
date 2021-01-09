@@ -3,11 +3,16 @@
 
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
 
+ :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
+
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
 
- :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/method.JPG?raw=true" width=100%> 
+</p>
+
 
 ## Background
 Flight Club is a modernised pub sport, and [social experience](https://flightclubdarts.com/london/our-story). It has become a popular franchise around London where it's main selling point is a [gamified](https://en.wikipedia.org/wiki/Gamification), automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
