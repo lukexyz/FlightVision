@@ -1,18 +1,17 @@
 # 🎯 FlightVision
 > Serious bar sports. With seriously accurate XY coordinates.
-
 A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
-
-
-<p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/location.JPG?raw=true"> 
-</p>  
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
 
+
 # Existing Solution  
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/location.JPG?raw=true"> 
+</p>  
 
 ### Booking Experience 
 
