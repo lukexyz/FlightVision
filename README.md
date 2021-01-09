@@ -1,13 +1,19 @@
 # 🎥🎯 FlightVision
 > Serious bar sports. With seriously accurate XY coordinates.  
 
-A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
+A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression.  
 
  :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
+
+##### 📋 Method  
+
+1. Input frame passes through `unet` model for segmentation mask inference.  
+2. `OpenCV` blob detection identifies centroid location.  
+3. `OpenCV` overlay is applied to show the results
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/method.JPG?raw=true" width=100%> 
