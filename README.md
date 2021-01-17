@@ -21,7 +21,7 @@ A realtime solution to track dart targets with `fastai` and `unets`, using segme
 
 
 ## Background
-Flight Club is a modernised pub sport and [social experience](https://flightclubdarts.com/london/our-story). It has become a popular franchise around London where it's main selling point is a [gamified](https://en.wikipedia.org/wiki/Gamification), automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
+Flight Club is the name of a franchise in London that modernised the classic [pub sport](https://flightclubdarts.com/london/our-story). It's success comes from the [gamified](https://en.wikipedia.org/wiki/Gamification) automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
 
 As of 2020 it has expanded into 3 locations in the UK and one in Chicago, USA. 
 
