@@ -68,7 +68,7 @@ In [lesson 3](https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/n
 I spent a fair amount of time trying to get this regression based `cnn_learner` working – but it simply failed to converge during training. I was surprised that the model couldn't accurately predict the validation data given the simplicity of some of the samples. For example, the third image down was a picture of a dart, by itself, on a plain background – and it still couldn't make a reasonable prediction.
 
 <p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/regression_training_problems.JPG?raw=true" width=40%>
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/regression_training_problems.JPG?raw=true" width=60%>
 </p>
 
 I knew something must be wrong either with the training process and architecture, or there was a limitation with the dataset I had created. In order to isolate the problem I generated a new dataset.
