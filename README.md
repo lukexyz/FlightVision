@@ -89,4 +89,11 @@ What I found was that even with this much simplified computer vision problem, th
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/training_segmentation.JPG?raw=true" width=70%>
 </p>
 
+### 4. Applying learnings to synthetic dataset
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
+synthetic_with_unets.png?raw=true" width=70%>
+</p>
+
 
