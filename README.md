@@ -1,16 +1,27 @@
 # 🎥🎯 FlightVision
-> Serious bar sports. With seriously accurate XY coordinates.  
+> Serious bar sports, with seriously accurate XY coordinates.  
 
-A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression. 
+A realtime solution to track dart targets with `fastai` and `unets`, using segmentations layers rather than classical regression.  
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/tracker_shot_hq.gif"> 
 </p>
 
- :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
+:bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
+
+##### 📋 `x, y` Coordinate Tracking  
+
+1. Input frame passes through `unet` model for segmentation mask inference.  
+2. `OpenCV` blob detection identifies centroid location.  
+3. `OpenCV` overlay is applied to show the results
+
+<p align="center">
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/method.JPG?raw=true" width=70%> 
+</p>
+
 
 ## Background
-Flight Club is a modernised pub sport, and [social experience](https://flightclubdarts.com/london/our-story). It has become a popular franchise around London where it's main selling point is a [gamified](https://en.wikipedia.org/wiki/Gamification), automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
+Flight Club is the name of a franchise in London that modernised the classic [pub sport](https://flightclubdarts.com/london/our-story). It's success comes from the [gamified](https://en.wikipedia.org/wiki/Gamification) automated scoring system. It has a 3D vision system comprised of live cameras, and also includes a well-polished interface which runs on a screen above the board. This opens the traditional game up for improved entertainment with the inclusion of minigames like team elimination, or a snakes-and-ladders adaption – where the target of your dart throw is how far forward you move on the board. 
 
 As of 2020 it has expanded into 3 locations in the UK and one in Chicago, USA. 
 
@@ -57,7 +68,7 @@ In [lesson 3](https://nbviewer.jupyter.org/github/fastai/course-v3/blob/master/n
 I spent a fair amount of time trying to get this regression based `cnn_learner` working – but it simply failed to converge during training. I was surprised that the model couldn't accurately predict the validation data given the simplicity of some of the samples. For example, the third image down was a picture of a dart, by itself, on a plain background – and it still couldn't make a reasonable prediction.
 
 <p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/regression_training_problems.JPG?raw=true" width=40%>
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/regression_training_problems.JPG?raw=true" width=60%>
 </p>
 
 I knew something must be wrong either with the training process and architecture, or there was a limitation with the dataset I had created. In order to isolate the problem I generated a new dataset.
