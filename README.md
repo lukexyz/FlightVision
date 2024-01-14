@@ -102,7 +102,7 @@ What I found was that even with this much simplified computer vision problem, th
 
 ### 4. Applying learnings to synthetic dataset
 
-Upon observing that the novel architecture significantly enhanced accuracy by an order of magnitude, I fully committed to exploring this approach in depth.
+Upon observing that the novel architecture significantly enhanced accuracy by an order of magnitude, I fully committed to exploring this approach in my manually sourced data.
 
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
@@ -111,23 +111,22 @@ synthetic_with_unets.png?raw=true" width=70%>
 
 
 ### 5. Back to the real dataset with the new architecture
-
 <p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
-back_to_real_dataset.png?raw=true" width=70%>
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/back_to_real_dataset.png?raw=true" width=70%>
 </p>
 
 Incredibly this new technique was now giving me about `99%` accuracy, and only failing on sample images which had heavy blurs across the photos, or obstructed views – which is a common problem of data quality. It's not something I'm interesting in solving immediately – when the other option is to ignore those frames and make a prediction when you see a high fidelity shot. 
 
 
-### 6. Final Performance of real-world model
+### 6. Final Performance of real-world model..
+
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
 final_inference.png?raw=true" width=70%>
 </p>
 
-Like the video shown at the top of the article, the algorithm can accurately predict the point of a dart down to sub-pixel scales. It does have some failure points – like when the camera is moving to fast (causing blur) or I suppose when there is some major out-sample examples. But I took a considerable joy in branching out into different tangents to explore the limits of what was possible (synethic image generation with blender) and what was a dead end (regression analysis for a CV coordinate). I hope this project has brought some joy and maybe some learnings to those who read it :) 
+Like the video shown at the top of the article, the algorithm can accurately predict the point of a dart down to sub-pixel scales 🎯 It does have some failure points – like when the camera is moving to fast (causing blur) or I suppose when there is some major out-of-sample examples. But I took a considerable joy in branching out into different fields to explore the limits of what was possible (synethic image generation with blender) which sometimes were a dead end (regression analysis for a CV coordinate). I hope this project has brought some joy and maybe some learnings to those who read it :) 
 
 
 ## Link to the main notebook file 📒
-  :bookmark_tabs: [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
+  📝 [FlightVision_Unet_c950.ipynb.ipynb](https://github.com/lukexyz/FlightVision/blob/master/nbs/16fastai2_FlightVision_Unet_c950.ipynb)
