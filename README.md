@@ -102,6 +102,8 @@ What I found was that even with this much simplified computer vision problem, th
 
 ### 4. Applying learnings to synthetic dataset
 
+Upon observing that the novel architecture significantly enhanced accuracy by an order of magnitude, I fully committed to exploring this approach in depth.
+
 <p align="center">
   <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
 synthetic_with_unets.png?raw=true" width=70%>
