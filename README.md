@@ -105,8 +105,7 @@ What I found was that even with this much simplified computer vision problem, th
 Upon observing that the novel architecture significantly enhanced accuracy by an order of magnitude, I fully committed to exploring this approach in my manually sourced data.
 
 <p align="center">
-  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/
-synthetic_with_unets.png?raw=true" width=70%>
+  <img src="https://github.com/lukexyz/FlightVision/blob/master/media/synthetic_with_unets.png?raw=true" width=70%>
 </p>
 
 
